@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilverTech Constructions | Premium Architecture & Engineering Professionals</title>
+    <meta name="description"
+        content="SilverTech Constructions - Minimalist architectural excellence and engineering precision in Kerala.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
+</head>
+
+<body>
+    <div id="butterfly-container">
+        <div class="butterfly-light"></div>
+    </div>
+    <div class="aura-bg">
+        <!-- Optional: Add <img class="hero-bg-img" src="..."> here for cinematic background -->
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container container-full">
+            <div class="nav-left">
+                <div class="logo-group">
+                    <div class="logo-text">SilverTech Constructions</div>
+                </div>
+            </div>
+            <ul class="nav-center-menu">
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="nav-actions">
+                    <a href="https://www.instagram.com/silvertechconstructions/" target="_blank" class="nav-icon-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/919847054321" class="nav-icon-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/silvertech.constructions/" target="_blank" class="nav-icon-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content-centered">
+            <h1 class="archon-title fade-in">SilverTech Constructions</h1>
+            <p class="archon-subtitle fade-in delay-1">PREMIUM ENGINEERING & ARCHITECTURE PROFESSIONALS</p>
+            <p class="archon-location fade-in delay-1">KERALA, INDIA</p>
+            <div class="hero-btns fade-in delay-2">
+                <a href="#contact" class="btn-archon">MAKE AN ENQUIRY</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-grid">
+                    <div class="about-content reveal">
+                        <h3>Our Philosophy</h3>
+                        <p>At SilverTech Constructions, we believe that architecture is more than just structures; it's
+                            about creating
+                            spaces that inspire and endure. For over a decade, we have been at the forefront of Kerala's
+                            architectural landscape, blending traditional craftsmanship with avant-garde engineering.
+                        </p>
+                        <p>Our approach is rooted in minimalism and precision, ensuring that every line drawn and every
+                            brick laid contributes to a greater vision of functional elegance.</p>
+                    </div>
+                    <div class="about-features reveal delay-1">
+                        <div class="feature-item">
+                            <span class="feature-num">15+</span>
+                            <span class="feature-text">Years of Excellence</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <span class="feature-num">500+</span>
+                            <span class="feature-text">Happy Customers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="section">
+            <div class="container">
+                <h2 class="section-title">Leadership</h2>
+                <div class="team-grid">
+                    <div class="team-card reveal">
+                        <div class="team-image-container">
+                            <img id="owner-img" src="" alt="Binoy K S">
+                        </div>
+                        <div class="team-info">
+                            <h3>Binoy K S</h3>
+                            <span class="designation">Founder & Owner</span>
+                            <p class="team-about">With over 15+ years of experience in the construction industry, Binoy
+                                K S is the visionary founder behind SilverTech Constructions. His expertise spans across
+                                residential construction, commercial building projects, and large-scale infrastructure
+                                development. Under his leadership, the company has successfully completed 500+ projects
+                                across Kerala, establishing a reputation for quality, reliability, and timely project
+                                delivery.</p>
+                            <div class="team-contact">
+                                <a href="tel:+918301048759"><i class="fas fa-phone-alt"></i> +91 83010 48759</a>
+                                <a href="mailto:binoykudilipurath@gmail.com"><i class="fas fa-envelope"></i>
+                                    binoykudilipurath@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card reveal delay-1">
+                        <div class="team-image-container">
+                            <img id="manager-img" src="" alt="Eldhose K P">
+                        </div>
+                        <div class="team-info">
+                            <h3>Eldhose K P</h3>
+                            <span class="designation">CEO & Manager</span>
+                            <p class="team-about">Eldhose K P brings extensive experience in construction management and
+                                operations to SilverTech Constructions. As the CEO and Manager, he oversees day-to-day
+                                operations, ensures project execution excellence, and maintains the highest standards of
+                                quality and safety. His strategic approach to project management has been instrumental
+                                in delivering complex construction projects on time and within budget, earning the trust
+                                of clients across Kerala.</p>
+                            <div class="team-contact">
+                                <a href="tel:+918075966489"><i class="fas fa-phone-alt"></i> +91 80759 66489</a>
+                                <a href="mailto:kpeldhose50@gmail.com"><i class="fas fa-envelope"></i>
+                                    kpeldhose50@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <div class="services-grid">
+                    <div class="service-block reveal">
+                        <div class="service-slideshow">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                                alt="Residential 1" class="active">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+                                alt="Residential 2">
+                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
+                                alt="Residential 3">
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e?auto=format&fit=crop&w=800&q=80"
+                                alt="Residential 4">
+                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+                                alt="Residential 5">
+                            <img src="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=800&q=80"
+                                alt="Residential 6">
+                            <img src="https://images.unsplash.com/photo-1600585154542-63b1192ef436?auto=format&fit=crop&w=800&q=80"
+                                alt="Residential 7">
+                            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80"
+                                alt="Residential 8">
+                            <img src="https://images.unsplash.com/photo-1600563438938-a9a249f57983?auto=format&fit=crop&w=800&q=80"
+                                alt="Residential 9">
+                            <img src="https://images.unsplash.com/photo-1600585152223-146059fd39f2?auto=format&fit=crop&w=800&q=80"
+                                alt="Residential 10">
+                            <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&fit=crop&w=800&q=80"
+                                alt="Residential 11">
+                        </div>
+                        <div class="service-content">
+                            <span class="service-num">01</span>
+                            <h3>Residential</h3>
+                            <p>Bespoke living spaces crafted with structural precision and minimalist architectural
+                                elegance tailored for premium lifestyle.</p>
+                        </div>
+                    </div>
+                    <div class="service-block reveal delay-1">
+                        <div class="service-slideshow">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+                                alt="Commercial 1" class="active">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+                                alt="Commercial 2">
+                            <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80"
+                                alt="Commercial 3">
+                            <img src="https://images.unsplash.com/photo-1449156001437-3a144f0083bb?auto=format&fit=crop&w=800&q=80"
+                                alt="Commercial 4">
+                            <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=800&q=80"
+                                alt="Commercial 5">
+                            <img src="https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?auto=format&fit=crop&w=800&q=80"
+                                alt="Commercial 6">
+                            <img src="https://images.unsplash.com/photo-1497366752299-35a99551d2c6?auto=format&fit=crop&w=800&q=80"
+                                alt="Commercial 7">
+                            <img src="https://images.unsplash.com/photo-1475855581690-80accde3ae2b?auto=format&fit=crop&w=800&q=80"
+                                alt="Commercial 8">
+                            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80"
+                                alt="Commercial 9">
+                            <img src="https://images.unsplash.com/photo-1542601039-460d1ea3ca6c?auto=format&fit=crop&w=800&q=80"
+                                alt="Commercial 10">
+                            <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&w=800&q=80"
+                                alt="Commercial 11">
+                        </div>
+                        <div class="service-content">
+                            <span class="service-num">02</span>
+                            <h3>Commercial</h3>
+                            <p>State-of-the-art office spaces and retail environments designed for operational
+                                efficiency and brand identity.</p>
+                        </div>
+                    </div>
+                    <div class="service-block reveal delay-2">
+                        <div class="service-slideshow">
+                            <img src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&w=800&q=80"
+                                alt="Renovation 1" class="active">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80"
+                                alt="Renovation 2">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&w=800&q=80"
+                                alt="Renovation 3">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80"
+                                alt="Renovation 4">
+                            <img src="https://images.unsplash.com/photo-1590623335030-cf2f8a39003b?auto=format&fit=crop&w=800&q=80"
+                                alt="Renovation 5">
+                            <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80"
+                                alt="Renovation 6">
+                            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80"
+                                alt="Renovation 7">
+                            <img src="https://images.unsplash.com/photo-1503387837-b1599762193e?auto=format&fit=crop&w=800&q=80"
+                                alt="Renovation 8">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
+                                alt="Renovation 9">
+                            <img src="https://images.unsplash.com/photo-1556911223-e1f4347f59f9?auto=format&fit=crop&w=800&q=80"
+                                alt="Renovation 10">
+                            <img src="https://images.unsplash.com/photo-1449156001437-3a144f0083bb?auto=format&fit=crop&w=800&q=80"
+                                alt="Renovation 11">
+                        </div>
+                        <div class="service-content">
+                            <span class="service-num">03</span>
+                            <h3>Renovation</h3>
+                            <p>Adaptive reuse and modernization of heritage and aged structures, breathing new life into
+                                existing architectural footprints.</p>
+                        </div>
+                    </div>
+                    <div class="service-block reveal">
+                        <div class="service-slideshow">
+                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
+                                alt="Interior 1" class="active">
+                            <img src="https://images.unsplash.com/photo-1616489953149-653303689408?auto=format&fit=crop&w=800&q=80"
+                                alt="Interior 2">
+                            <img src="https://images.unsplash.com/photo-1616176426027-2dc046f4995a?auto=format&fit=crop&w=800&q=80"
+                                alt="Interior 3">
+                            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80"
+                                alt="Interior 4">
+                            <img src="https://images.unsplash.com/photo-1615876234886-fd9a39ca991a?auto=format&fit=crop&w=800&q=80"
+                                alt="Interior 5">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+                                alt="Interior 6">
+                            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80"
+                                alt="Interior 7">
+                            <img src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5dd?auto=format&fit=crop&w=800&q=80"
+                                alt="Interior 8">
+                            <img src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?auto=format&fit=crop&w=800&q=80"
+                                alt="Interior 9">
+                            <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80"
+                                alt="Interior 10">
+                            <img src="https://images.unsplash.com/photo-1616489953149-653303689408?auto=format&fit=crop&w=800&q=80"
+                                alt="Interior 11">
+                        </div>
+                        <div class="service-content">
+                            <span class="service-num">04</span>
+                            <h3>Interior Design</h3>
+                            <p>Curated interior experiences that blend spatial psychology with premium material palettes
+                                and functional luxury.</p>
+                        </div>
+                    </div>
+                    <div class="service-block reveal delay-1">
+                        <div class="service-slideshow">
+                            <img src="https://images.unsplash.com/photo-1511871893393-82e9c17ad63e?auto=format&fit=crop&w=800&q=80"
+                                alt="Architecture 1" class="active">
+                            <img src="https://images.unsplash.com/photo-1503387837-b1599762193e?auto=format&fit=crop&w=800&q=80"
+                                alt="Architecture 2">
+                            <img src="https://images.unsplash.com/photo-1497366752299-35a99551d2c6?auto=format&fit=crop&w=800&q=80"
+                                alt="Architecture 3">
+                            <img src="https://images.unsplash.com/photo-1518005020114-1e52db934b15?auto=format&fit=crop&w=800&q=80"
+                                alt="Architecture 4">
+                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80"
+                                alt="Architecture 5">
+                            <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80"
+                                alt="Architecture 6">
+                            <img src="https://images.unsplash.com/photo-1487958449913-d92a6c1d0c39?auto=format&fit=crop&w=800&q=80"
+                                alt="Architecture 7">
+                            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80"
+                                alt="Architecture 8">
+                            <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80"
+                                alt="Architecture 9">
+                            <img src="https://images.unsplash.com/photo-1501183638710-841dd1904538?auto=format&fit=crop&w=800&q=80"
+                                alt="Architecture 10">
+                            <img src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&w=800&q=80"
+                                alt="Architecture 11">
+                        </div>
+                        <div class="service-content">
+                            <span class="service-num">05</span>
+                            <h3>Architecture & Planning</h3>
+                            <p>From conceptual drafting to detailed 3D modeling, our blueprints are the foundation of
+                                structural perfection.</p>
+                        </div>
+                    </div>
+                    <div class="service-block reveal delay-2">
+                        <div class="service-slideshow">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+                                alt="Infrastructure 1" class="active">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&w=800&q=80"
+                                alt="Infrastructure 2">
+                            <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?auto=format&fit=crop&w=800&q=80"
+                                alt="Infrastructure 3">
+                            <img src="https://images.unsplash.com/photo-1531834685032-c744644bc30d?auto=format&fit=crop&w=800&q=80"
+                                alt="Infrastructure 4">
+                            <img src="https://images.unsplash.com/photo-1454165833202-094192661c94?auto=format&fit=crop&w=800&q=80"
+                                alt="Infrastructure 5">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+                                alt="Infrastructure 6">
+                            <img src="https://images.unsplash.com/photo-1449156001437-3a144f0083bb?auto=format&fit=crop&w=800&q=80"
+                                alt="Infrastructure 7">
+                            <img src="https://images.unsplash.com/photo-1581093196277-9f608109c4da?auto=format&fit=crop&w=800&q=80"
+                                alt="Infrastructure 8">
+                            <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&w=800&q=80"
+                                alt="Infrastructure 9">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&w=800&q=80"
+                                alt="Infrastructure 10">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+                                alt="Infrastructure 11">
+                        </div>
+                        <div class="service-content">
+                            <span class="service-num">06</span>
+                            <h3>Infrastructure</h3>
+                            <p>Handling large-scale government contracts and industrial engineering projects with
+                                high-level technical compliance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="happy-customers" class="section">
+            <div class="container">
+                <h2 class="section-title">Happy Customers</h2>
+                <div class="customers-media">
+                    <div class="media-gallery" id="media-gallery">
+                        <!-- Initial items -->
+                        <div class="media-item reveal">
+                            <img src="customer-house-1.jpg" alt="Client Dream Home">
+                        </div>
+                        <div class="media-item reveal video-item delay-1">
+                            <video loop muted onmouseover="this.play()" onmouseout="this.pause()">
+                                <source src="VID_20251116_141029_340.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay"><i class="fas fa-play"></i></div>
+                        </div>
+                        <div class="media-item reveal delay-2">
+                            <img src="customer-house-2.jpg" alt="Contemporary Villa Project">
+                        </div>
+                        <div class="media-item reveal video-item">
+                            <video loop muted onmouseover="this.play()" onmouseout="this.pause()">
+                                <source src="VID_20251116_141044_401.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay"><i class="fas fa-play"></i></div>
+                        </div>
+
+                        <!-- Hidden items by default -->
+                        <div class="media-item reveal hidden">
+                            <img src="construction-ceremony.jpg" alt="Groundbreaking Ceremony">
+                        </div>
+                        <div class="media-item reveal hidden video-item">
+                            <video loop muted onmouseover="this.play()" onmouseout="this.pause()">
+                                <source src="VID_20251117_103922_656.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay"><i class="fas fa-play"></i></div>
+                        </div>
+                        <div class="media-item reveal hidden">
+                            <img src="tijo-house.jpg" alt="Premium Residential Project">
+                        </div>
+                        <div class="media-item reveal hidden">
+                            <img src="n1.jpg" alt="Minimalist Home Design">
+                        </div>
+                    </div>
+
+                    <div class="gallery-actions reveal delay-2">
+                        <button id="btn-view-more" class="btn-archon">VIEW MORE</button>
+                        <button id="btn-upload-media" class="btn-archon secondary">UPLOAD YOUR STORY</button>
+                    </div>
+                    <div id="firebase-status"
+                        style="text-align: center; margin-top: 20px; font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); opacity: 0.5;">
+                        <i class="fas fa-circle-notch fa-spin"></i> Checking Cloud Connection...
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ongoing Projects Section -->
+        <section id="ongoing-projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Current Works</h2>
+                <div class="ongoing-grid">
+                    <!-- Project 1 -->
+                    <div class="ongoing-card reveal">
+                        <div class="ongoing-header">
+                            <span class="status-badge pulse">ONGOING</span>
+                            <span class="project-location"><i class="fas fa-map-marker-alt"></i> Punalur</span>
+                        </div>
+                        <h3>Indian Railways - Cable Work Sub Work</h3>
+                        <p class="client-name">Client: Indian Railways</p>
+                        <p class="project-desc">Cable work sub work for Indian Railways at Punalur. This project
+                            involves specialized cable installation and infrastructure work for railway systems.</p>
+                        <div class="project-details-grid">
+                            <div class="p-detail">
+                                <span class="d-label">STATUS</span>
+                                <span class="d-value">In Progress</span>
+                            </div>
+                            <div class="p-detail">
+                                <span class="d-label">LOCATION</span>
+                                <span class="d-value">Punalur</span>
+                            </div>
+                            <div class="p-detail">
+                                <span class="d-label">PROJECT TYPE</span>
+                                <span class="d-value">Cable Work - Sub Work</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="ongoing-card reveal delay-1">
+                        <div class="ongoing-header">
+                            <span class="status-badge pulse">ONGOING</span>
+                            <span class="project-location"><i class="fas fa-map-marker-alt"></i> EKM (Ernakulam)</span>
+                        </div>
+                        <h3>Sai Telimax - BSNL Work</h3>
+                        <p class="client-name">Client: BSNL Projects</p>
+                        <p class="project-desc">BSNL work for Sai Telimax at Ernakulam. This project involves
+                            telecommunications infrastructure work and network installation for BSNL.</p>
+                        <div class="project-details-grid">
+                            <div class="p-detail">
+                                <span class="d-label">STATUS</span>
+                                <span class="d-value">In Progress</span>
+                            </div>
+                            <div class="p-detail">
+                                <span class="d-label">LOCATION</span>
+                                <span class="d-value">EKM (Ernakulam)</span>
+                            </div>
+                            <div class="p-detail">
+                                <span class="d-label">PROJECT TYPE</span>
+                                <span class="d-value">BSNL Work</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Clients Section -->
+        <section id="clients-projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects & Clients</h2>
+                <div class="clients-grid">
+                    <div class="client-card reveal">
+                        <h3>Kerala Forest Department</h3>
+                        <p>Model Forest Station, Pooyamkutty</p>
+                    </div>
+                    <div class="client-card reveal delay-1">
+                        <h3>Pobs Granite Angamali</h3>
+                        <p>Chully project at New crusher and staff quarters project, SilverTech Constructions Company,
+                            Kothamangalam (Government & Private Construction)</p>
+                    </div>
+                    <div class="client-card reveal delay-2">
+                        <h3>KSEB Edamalayar</h3>
+                        <p>Building construction of Fencing protection grill work</p>
+                    </div>
+                    <div class="client-card reveal">
+                        <h3>PWD Works</h3>
+                        <p>Road Tarring and building at Kuttampuzha and Kothamangalam</p>
+                    </div>
+                    <div class="client-card reveal delay-1">
+                        <h3>Paulose George Construction Company</h3>
+                        <p>Engineers & Contractors - Construction of regulator cum bridge across Thoothapuzha at
+                            Mothikkayam, Malappuram</p>
+                    </div>
+                    <div class="client-card reveal delay-2">
+                        <h3>Regulator cum bridge</h3>
+                        <p>Across Bharathapuzha at Kankakadavu, Malappuram District</p>
+                    </div>
+                    <div class="client-card reveal">
+                        <h3>Poabs Rock product Pvt. Ltd., Kozhikkode</h3>
+                        <p>Construction of weigh bridge and protection wall works</p>
+                    </div>
+                    <div class="client-card reveal delay-1">
+                        <h3>J&B Aggregates and M-Sand Biduthi, Bangalore</h3>
+                        <p>Construction of new M-sand unit and crusher plant maintenance work</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Connect</h2>
+                <div class="contact-grid">
+                    <div class="contact-info-block reveal">
+                        <h3>Contact Details</h3>
+                        <div class="contact-details-list">
+                            <div class="contact-item">
+                                <span class="c-label">Location</span>
+                                <p>Kothamangalam, Vadattupara</p>
+                            </div>
+                            <div class="contact-item">
+                                <span class="c-label">Phone</span>
+                                <a href="tel:+919539548759">+91 9539548759</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="c-label">Email</span>
+                                <a href="mailto:silvertechconstruction@gmail.com">silvertechconstruction@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="c-label">Opening Hours</span>
+                                <p>Monday - Saturday<br>9:00 AM - 6:00 PM</p>
+                                <span id="shop-status" class="status-indicator">Checking...</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="c-label">Current Time (IST)</span>
+                                <p id="ist-clock">Loading...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="whatsapp-contact-form" class="reveal delay-1">
+                        <div class="form-group">
+                            <input type="text" id="wa-name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="wa-email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="wa-phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="wa-service" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="Residential">Residential Construction</option>
+                                <option value="Commercial">Commercial Projects</option>
+                                <option value="Renovation">Renovation & Restoration</option>
+                                <option value="Interior Design">Interior Design</option>
+                                <option value="Architecture & Planning">Architecture & Planning</option>
+                                <option value="Infrastructure">Infrastructure Works</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="wa-message" placeholder="Project Description (Optional)" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer id="main-footer">
+        <div class="footer-container container-full">
+            <div class="footer-column brand-col">
+                <h3 class="footer-logo">SilverTech Constructions</h3>
+                <p class="footer-tagline">Building excellence through quality craftsmanship and innovative solutions.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#works">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>SERVICES</h4>
+                <ul>
+                    <li><a href="#works">Renovation</a></li>
+                    <li><a href="#works">Building Constructions</a></li>
+                    <li><a href="#works">Home Building</a></li>
+                    <li><a href="#works">Design and Management</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>CONNECT</h4>
+                <ul class="social-links-list">
+                    <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    </li>
+                    <li><a href="https://www.instagram.com/silvertechconstructions/" target="_blank"><i
+                                class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://wa.me/919539548759" target="_blank"><i class="fab fa-whatsapp"></i>
+                            WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SilverTech Constructions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Upload Preview Modal -->
+    <div id="preview-modal" class="modal">
+        <span class="modal-close" id="preview-close">&times;</span>
+        <div class="modal-content">
+            <h3 style="margin-bottom: 20px; color: var(--gold-active);">Review your story</h3>
+            <div id="preview-body" style="margin-bottom: 20px;"></div>
+            <div class="modal-actions" style="display: flex; gap: 15px; justify-content: center;">
+                <button id="btn-confirm-upload" class="btn-archon">UPLOAD NOW</button>
+                <button id="btn-cancel-upload" class="btn-archon secondary">CANCEL</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Media Viewer Modal -->
+    <div id="media-modal" class="modal">
+        <span class="modal-close" id="media-close">&times;</span>
+        <div class="modal-content">
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
